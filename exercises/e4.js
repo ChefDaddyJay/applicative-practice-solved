@@ -1,4 +1,4 @@
-import { data } from "../data/data";
+//import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 4
 // Return an array of Planets' names with gravity less than 10
@@ -6,9 +6,8 @@ import { data } from "../data/data";
 
 export function getPlanetsWithLowGravity(data) {
   // Your code goes here...
+  return data.planets.filter((p) => p.gravity < 10).map((p) => p.name);
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-4"

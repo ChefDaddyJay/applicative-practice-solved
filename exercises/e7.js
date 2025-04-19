@@ -6,9 +6,8 @@ import { data } from "../data/data";
 
 export function getPlanetsNamesWithMoons(data) {
   // Your code goes here...
+  return data.planets.filter((p) => p.moons).map((p) => p.name);
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-7"
